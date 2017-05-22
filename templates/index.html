@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for("static", filename="my.css") }}">
+  </head>
+  <body>
+    <div class="container">
+  <div class="jumbotron">
+        <h1>Who is 🔥?</h1>
+  </div>
+  <div class="row marketing">
+    <div class="col-lg-6">
+        <a href="/?vote={{ first }}">
+            <img src="{{ url_for("static", filename="images/1.jpg") }}" class="img-responsive" >
+        </a>
+    </div>
+    <div class="col-lg-6">
+        <a href="/?vote={{ second }}">
+            <img src="{{ url_for("static", filename="images/2.jpg") }}" class="img-responsive" >
+        </a>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary">SKIP</button>
+    <br>
+    <br>
+  <footer class="footer">
+    <p>&copy; 2017 enotcode</p>
+  </footer>
+
+</div>
+  </body>
+</html>
