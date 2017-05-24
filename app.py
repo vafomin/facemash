@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-base = 'mongodb://admin:nimda@ds233895.mlab.com:33895/facemash'
+base = 'mongodb://localhost:21017'
 
 client = MongoClient(base)
 db = client["facemash"]
