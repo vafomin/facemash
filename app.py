@@ -24,7 +24,6 @@ def index():
 def vote(v):
     vote = db.data.find_one({"id": int(v)})["vote"] + 1
     db.data.update({"id": int(v)}, {"$set":{"vote":vote}})
-    print(db.data.find_one({"id": int(v)}))
     return redirect(url_for('index'), 302)
 
 
