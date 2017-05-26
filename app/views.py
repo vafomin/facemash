@@ -1,9 +1,9 @@
 import random
 
-from flask import Flask, render_template, url_for, redirect
+from flask import render_template, url_for, redirect
 from pymongo import MongoClient
 
-app = Flask(__name__)
+from . import app
 
 base = 'mongodb://localhost:21017'
 
@@ -25,7 +25,3 @@ def vote(v):
     vote = db.data.find_one({"id": int(v)})["vote"] + 1
     db.data.update({"id": int(v)}, {"$set":{"vote":vote}})
     return redirect(url_for('index'), 302)
-
-
-if __name__ == '__main__':
-    app.run()
