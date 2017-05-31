@@ -12,12 +12,10 @@ python run.py
 ```
 and start `mongod` processes
 
-### MongoDB Document structure
-```
-{
-    "id": 1, //number image
-    "vote": 19 //count image vote
-}
+for create data base run
+
+```sh
+python db.py
 ```
 
 # Want to contribute?
