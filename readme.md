@@ -12,11 +12,13 @@ python run.py
 ```
 and start `mongod` processes.
 
-For create data base run
+### How to create data base?
 
-```sh
-python db.py
-```
+Run `python db.py`
+
+### How to use your images?
+
+Just drop them into the images folder
 
 # Want to contribute?
 
