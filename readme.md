@@ -10,9 +10,9 @@ cd facemash
 pip install -r requirements.txt
 python run.py
 ```
-and start `mongod` processes
+and start `mongod` processes.
 
-for create data base run
+For create data base run
 
 ```sh
 python db.py
