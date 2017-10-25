@@ -23,5 +23,5 @@ def index():
 @app.route('/vote/<v>')
 def vote(v):
     vote = db.data.find_one({"id": int(v)})["vote"] + 1
-    db.data.update({"id": int(v)}, {"$set":{"vote":vote}})
+    db.data.update({"id": int(v)}, {"$set": {"vote": vote}})
     return redirect(url_for('index'), 302)

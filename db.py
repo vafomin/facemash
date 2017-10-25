@@ -1,5 +1,6 @@
 # Data Base Creator  💾
 import os
+
 from pymongo import MongoClient
 
 path, dirs, files = os.walk("app/static/images").next()
@@ -12,5 +13,5 @@ db = client["shortly"]
 
 db.data
 
-for i in range(1,count):
-    db.data.save( {'id':i, 'vote':0} )
+for i in range(1, count):
+    db.data.save({'id': i, 'vote': 0})
