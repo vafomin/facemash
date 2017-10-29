@@ -1,5 +1,6 @@
 [![Status](https://img.shields.io/badge/status-stable-brightgreen.svg?style=flat-square)](#)
 [![Build Status](https://img.shields.io/travis/enotcode/facemash/master.svg?style=flat-square)](https://travis-ci.org/enotcode/facemash)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/enotcode/facemash.svg?style=flat-square)](https://scrutinizer-ci.com/g/enotcode/facemash/?branch=master)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](/LICENSE/)
 
 # Facemash
